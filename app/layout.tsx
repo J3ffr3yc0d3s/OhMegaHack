@@ -11,6 +11,25 @@ export const metadata: Metadata = {
   title: "ICSD Hackathon",
   description: "Electronics Hackathon 2025",
   generator: "v0.app",
+  icons: {
+    icon: [
+      {
+        url: "/icsd-logo.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/icsd-logo.png",
+        sizes: "16x16",
+        type: "image/png",
+      }
+    ],
+    apple: {
+      url: "/icsd-logo.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
+  },
 }
 
 export default function RootLayout({
