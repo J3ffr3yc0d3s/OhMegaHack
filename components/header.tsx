@@ -32,29 +32,31 @@ export default function Header() {
             </p>
           </div>
         </div>
-        {/* Action buttons row */}
-        <div className="flex flex-row justify-between items-end mt-6 gap-4 sm:gap-6 md:gap-8 px-2 sm:px-4 md:px-8">
-          {/* Register Button (left) */}
-          <GlowingButton
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=4jyW1JSvIkGVqWROiwFiTektmUvqliVBgIlC-tfIDcRUQllHVkxMVlNYT0hFNktNMzdFT0JUNjQwRy4u", "_blank", "noopener,noreferrer");
-            }}
-            color="dark"
-            className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
-          >
-            Register
-          </GlowingButton>
-          <GlowingButton
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://site-fu5n1mj73-janavee01s-projects.vercel.app", "_blank", "noopener,noreferrer");
-            }}
-            color="dark"
-            className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
-          >
-            Visit Us
-          </GlowingButton>
+        {/* Action buttons row: stack on small screens, row on sm+ */}
+        <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center sm:justify-between mt-6 gap-4 sm:gap-6 md:gap-8 px-2 sm:px-4 md:px-8">
+          {/* Left group: Register + Visit Us */}
+          <div className="flex items-center gap-3">
+            <GlowingButton
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=4jyW1JSvIkGVqWROiwFiTektmUvqliVBgIlC-tfIDcRUQllHVkxMVlNYT0hFNktNMzdFT0JUNjQwRy4u", "_blank", "noopener,noreferrer");
+              }}
+              color="dark"
+              className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] flex-shrink-0 text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
+            >
+              Register
+            </GlowingButton>
+            <GlowingButton
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("https://site-fu5n1mj73-janavee01s-projects.vercel.app", "_blank", "noopener,noreferrer");
+              }}
+              color="dark"
+              className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] flex-shrink-0 text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
+            >
+              Visit Us
+            </GlowingButton>
+          </div>
           {/* Submit Button (right) */}
           <GlowingButton
             onClick={(e) => {
@@ -62,7 +64,7 @@ export default function Header() {
               window.open("https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=4jyW1JSvIkGVqWROiwFiTektmUvqliVBgIlC-tfIDcRUNVRUMEFKNE8zWUo5N0U3TzZWR0UzN01ZNC4u", "_blank", "noopener,noreferrer");
             }}
             color="cyan"
-            className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
+            className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] flex-shrink-0 text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
           >
             Submit
           </GlowingButton>
