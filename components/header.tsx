@@ -45,6 +45,16 @@ export default function Header() {
           >
             Register
           </GlowingButton>
+          <GlowingButton
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("https://site-fu5n1mj73-janavee01s-projects.vercel.app", "_blank", "noopener,noreferrer");
+            }}
+            color="dark"
+            className="min-w-[100px] sm:min-w-[120px] md:min-w-[140px] text-xs sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-4 sm:px-6 md:px-8 cursor-pointer"
+          >
+            Visit Us
+          </GlowingButton>
           {/* Submit Button (right) */}
           <GlowingButton
             onClick={(e) => {
